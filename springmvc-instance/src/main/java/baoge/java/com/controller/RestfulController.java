@@ -11,6 +11,7 @@ public class RestfulController
     @GetMapping("system/{module}/{function}")
     public String load(@PathVariable("module") String module, @PathVariable("function") String function)
     {
-        return module + "/" + function;
+        return module + "/" + function + "update";
+
     }
 }
