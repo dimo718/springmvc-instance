@@ -12,7 +12,7 @@ public class JsonController
 {
     // 通过method属性指定当前这个请求的请求方式必须是POST
     @RequestMapping(value = "/userJson", method = RequestMethod.POST)
-    @ResponseBody // 调用方法返回的结果转换为一个json对象
+    @ResponseBody // 调用方打打法返回的结果转换为一个json对象
     // RequestBody 把从前端接收的json字符串转换为对应类型对象
     public User json(@RequestBody User user)
     {
